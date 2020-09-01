@@ -110,6 +110,8 @@ DateTime DateUploaded { get; set; }
   
 # Additional Notes
 You are free to use any tool and libraries you think that can make your coding efficient as long as you are not violating any licensing agreement. This applies both on the Backend and the Frontend.
+
+For SQL Database, you're also free to choose the engine you may want. But it will be nicer if you plug the App using MS SQL Server. :)
   
 # Submission
 Once your OK and confident with your work, do a Pull Request of your working branch going to the 'master' branch so we can review your work.
