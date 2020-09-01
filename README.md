@@ -11,7 +11,7 @@ This .NET Class Library Project contains initial models that will be used throug
 This .NET Class Library Project contains inital DbContext that will be used throughout the App. This Project should also include the business logic when persisting data - which will be described as part of the requirements of the exam.
 
 # Project - ScenarioCloud.WebDeveloperExam.Web
-This .Net Web Application Project will the main App. This will contain the UI itself and any UI-related logic.
+This .Net Web Application Project will be the main App. This will contain the UI itself and any UI-related logic.
 
 # Getting Started
 The first thing to do is [Clone](https://github.com/Scenario-Cloud/web-developer-exam.git) this Repository.
@@ -108,6 +108,8 @@ The API method should acccept a criteria object as its payload as shown below.
 public class DocumentSearchCriteria
 {
   public int? DocumentId { get; set; } // this should search a Document with particular Id if value is supplied.
+  public int[] RegisterIds { get; set; } // nullable - this should search Documents with matching Register Ids if value(s) is (are) supplied.
+  public int[] ProjectIds { get; set; } // nullable - this should search Documents with matching Project Ids if value(s) is (are) supplied.
   public string SearchText { get; set; } // this should search keywords in the Document's Subject and DocumentNo fields if value is supplied.
   public bool? WitAttachments { get; set; } // this should search whether a Document has Attachments or not if value is supplied.
 }
@@ -138,6 +140,8 @@ This feature is a nice to have but not really required.
    c. A section that could add Attachment(s) for the Document.
    
    BONUS: Some Form Validation in the client-side. Nice to have - but not really required since the server-side should be able to handle validations as well.
+   
+   BONUS: Display Attachment's upload Date and Time based on browser's timezone.
   
 # Additional Notes
 You are free to use any tool and libraries you think that can make your coding efficient as long as you are not violating any licensing agreement. This applies both on the Backend and the Frontend.
@@ -145,6 +149,8 @@ You are free to use any tool and libraries you think that can make your coding e
 For SQL Database, you're also free to choose the engine you may want. But it will be nicer if you plug the App using MS SQL Server. :)
   
 # Submission
-Once your OK and confident with your work, do a Pull Request of your working branch going to the 'master' branch so we can review your work.
+Once your OK and confident with your work, push your working branch and do a [Pull Request](https://github.com/Scenario-Cloud/web-developer-exam/pulls) going to the 'master' branch so we can do the review.
 
 Good Luck and Happy Coding! ;)
+
+- Scenario Development Team
