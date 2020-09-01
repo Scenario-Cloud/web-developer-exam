@@ -5,7 +5,7 @@ If you're here, you may be interested for a Software Developer / Web Developer p
 In this Repository, a .NET Solution file with three Projects coded in C# can be found.
 
 # Project - ScenarioCloud.WebDeveloperExam.Business
-This .NET Class Library Project contains initial models that will be used throughout the App. By the end of the exam, the App should be utilizing Entity Framework using the model(s) can found in this Project.
+This .NET Class Library Project contains initial models that will be used throughout the App. By the end of the exam, the App should be utilizing Entity Framework using the model(s) that can found in this Project.
 
 # Project - ScenarioCloud.WebDeveloperExam.Data
 This .NET Class Library Project contains inital DbContext that will be used throughout the App. This Project should also include the business logic when persisting data - which will be described as part of the requirements of the exam.
@@ -76,13 +76,15 @@ DateTime DateUploaded { get; set; }
 	
 	d. Project should be required and should enforce Foreign Key constraints.
 
-11. Make a logic that persits 'Attachment' objects for a given 'Document'. Persisting Documents should have these conditions:
+11. Make a logic that persits 'Attachment' objects for a given 'Document'. Persisting Attachments should have these conditions:
 
     a. Filename field should be required.
 	
-	b. FileSize field should always be greater that zero (0) and should be less than the byte equivalent of one (1) Gigabyte (GB).
+	b. FileSize field should always be greater than zero (0) and should be less than the byte equivalent of one (1) Gigabyte (GB).
 	
 	c. Document field should be required and should enforce Foreign Key constraints.
+	
+	d. DateUploaded should be the date and time the data is persisted but in UTC.
 	
 12. Setup all of the data persisting and business logic into a Web API.
 
