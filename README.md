@@ -13,8 +13,24 @@ This .NET Class Library Project contains inital DbContext that will be used thro
 # Project - ScenarioCloud.WebDeveloperExam.Web
 This .Net Web Application Project will the main App. This will contain the UI itself and any UI-related logic.
 
-# Requirements - Server Side
+# Getting Started
+The first thing to do is [Clone](https://github.com/Scenario-Cloud/web-developer-exam.git) this Repository.
+
+```bash
+git clone https://github.com/Scenario-Cloud/web-developer-exam.git
+```
+
+Afterwards, create a branch named '{Your First Name}.{Your Middle Initial}.{Your Last Name}' which will serve as your working branch. 
+
+Example:
+
+```bash
+git checkout -b juan.c.delacruz 
+```
+
+# Requirements - Server Side / Backend
 1. Create a Model named 'Register'. This should have the following fields:
+
 ```c#
  int Id { get; set; }
  string Code { get; set; }
@@ -22,6 +38,7 @@ This .Net Web Application Project will the main App. This will contain the UI it
 ```
 
 2. Create a Model named 'Project'. This should have the following fields:
+
 ```c#
 int Id { get; set; }
 string ProjectNo { get; set; }
@@ -29,6 +46,7 @@ string Name { get; set; }
 ```
 
 3. Create a Model named 'Attachment'. This should have the following fields:
+
 ```c#
 int Id { get; set; }
 string Filename { get; set; }
@@ -49,12 +67,51 @@ DateTime DateUploaded { get; set; }
 9. Make a logic that will create a default list of Project if data does not exists. Ensure that there are at least three (3) Register data.
 
 10. Make a logic that persists 'Document' object. Persisting Documents should have these conditions:
+
     a. DocumentNo field should be required.
+	
 	b. Subject field should be required.
+	
 	c. Register should be required and should enforce Foreign Key constraints.
+	
 	d. Project should be required and should enforce Foreign Key constraints.
 
 11. Make a logic that persits 'Attachment' objects for a given 'Document'. Persisting Documents should have these conditions:
+
     a. Filename field should be required.
+	
 	b. FileSize field should always be greater that zero (0) and should be less than the byte equivalent of one (1) Gigabyte (GB).
+	
 	c. Document field should be required and should enforce Foreign Key constraints.
+	
+12. Setup all of the data persisting and business logic into a Web API.
+
+# Requirements - UI / Frontend
+
+1. Create a UI that will list all of the available Documents. The list should have the following feature:
+
+   a. The list should be able to display at least these fields: Project, Register, DocumentNo, Subject.
+   
+   b. A button / link that will enable adding new Document should be available within this page.
+   
+   c. A list item should be capable of handling edits or deletions.
+   
+   BONUS: If possible, add something that can indicate Attachment(s) exists for a list item. Nice to have - but not really required.
+ 
+2. Create a UI for entering Document Information. The page should have the following feature:
+
+   a. Able to select the Register for the Document.
+   
+   b. Able to select the Project for the Document.
+   
+   c. A section that could add Attachment(s) for the Document.
+   
+   BONUS: Some Form Validation in the client-side. Nice to have - but not really required since the server-side should be able to handle validations as well.
+  
+# Additional Notes
+You are free to use any tool and libraries you think that can make your coding efficient as long as you are not violating any licensing agreement. This applies both on the Backend and the Frontend.
+  
+# Submission
+Once your OK and confident with your work, do a Pull Request of your working branch going to the 'master' branch so we can review your work.
+
+Good Luck and Happy Coding! ;)
