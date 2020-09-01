@@ -88,7 +88,7 @@ DateTime DateUploaded { get; set; }
 	
 12. Setup all of the data persisting and business logic into a Web API.
 
-BONUS: Create a API method that will return the below object type:
+BONUS: Create a API method that will return a list of the below object type:
 
 ```c#
 public class DocumentInfo
@@ -102,6 +102,17 @@ public class DocumentInfo
 }
 ```
 
+The API method should acccept a criteria object as its payload as shown below.
+
+```c#
+public class DocumentSearchCriteria
+{
+  public int? DocumentId { get; set; } // this should search a Document if particular Id if value is supplied.
+  public string SearchText { get; set; } // this should search keywords in the Document's Subject and DocumentNo fields if value supplied.
+  public bool? WitAttachments { get; set; } // this should search whether a Document has Attachments or not if value is supplied.
+}
+```
+ 
 The method that will return the above object should be produced through the use of Raw Sql Statement (Query). 
 
 This feature is a nice to have but not really required.
