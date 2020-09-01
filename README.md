@@ -76,7 +76,7 @@ DateTime DateUploaded { get; set; }
 	
 	d. Project should be required and should enforce Foreign Key constraints.
 
-11. Make a logic that persits 'Attachment' objects for a given 'Document'. Persisting Attachments should have these conditions:
+11. Make a logic that persists 'Attachment' objects for a given 'Document'. Persisting Attachments should have these conditions:
 
     a. Filename field should be required.
 	
