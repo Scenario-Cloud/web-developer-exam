@@ -88,6 +88,24 @@ DateTime DateUploaded { get; set; }
 	
 12. Setup all of the data persisting and business logic into a Web API.
 
+BONUS: Create a API method that will return the below object type:
+
+```c#
+public class DocumentInfo
+{
+  public int Id { get; set; }
+  public string DocumentNo { get; set; }
+  public string Subject { get; set; }
+  public string RegisterCode { get; set; }
+  public string ProjectNo { get; set; }
+  public int AttachmentCount { get; set; }  
+}
+```
+
+The method that will return the above object should be produced through the use of Raw Sql Statement (Query). 
+
+This feature is a nice to have but not really required.
+
 # Requirements - UI / Frontend
 
 1. Create a UI that will list all of the available Documents. The list should have the following feature:
