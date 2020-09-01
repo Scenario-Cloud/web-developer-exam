@@ -107,13 +107,13 @@ The API method should acccept a criteria object as its payload as shown below.
 ```c#
 public class DocumentSearchCriteria
 {
-  public int? DocumentId { get; set; } // this should search a Document if particular Id if value is supplied.
-  public string SearchText { get; set; } // this should search keywords in the Document's Subject and DocumentNo fields if value supplied.
+  public int? DocumentId { get; set; } // this should search a Document with particular Id if value is supplied.
+  public string SearchText { get; set; } // this should search keywords in the Document's Subject and DocumentNo fields if value is supplied.
   public bool? WitAttachments { get; set; } // this should search whether a Document has Attachments or not if value is supplied.
 }
 ```
  
-The method that will return the above object should be produced through the use of Raw Sql Statement (Query). 
+The method that will return the list of the DocumentInfo object should be produced through the use of Raw Sql Statement (Query). 
 
 This feature is a nice to have but not really required.
 
