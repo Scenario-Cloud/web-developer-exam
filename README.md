@@ -64,7 +64,7 @@ DateTime DateUploaded { get; set; }
 
 8. Make a logic that will create a default list of Register if data does not exists. Ensure that there are at least three (3) Register data.
 
-9. Make a logic that will create a default list of Project if data does not exists. Ensure that there are at least three (3) Register data.
+9. Make a logic that will create a default list of Project if data does not exists. Ensure that there are at least three (3) Project data.
 
 10. Make a logic that persists 'Document' object. Persisting Documents should have these conditions:
 
