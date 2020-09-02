@@ -13,6 +13,11 @@ This .NET Class Library Project contains inital DbContext that will be used thro
 # Project - ScenarioCloud.WebDeveloperExam.Web
 This .Net Web Application Project will be the main App. This will contain the UI itself and any UI-related logic.
 
+# Exam Coverage
+The exam revolves around creating a small Web App which will gauge your expertise on the Backend and Frontend Development. This excercise will also gauge your basic knowledge on using Git.
+
+BONUS Segments can be found in each 'Requirements' Section. These are not really required but PLUS points if ever you managed to achieve these items. 
+
 # Getting Started
 The first thing to do is [Clone](https://github.com/Scenario-Cloud/web-developer-exam.git) this Repository.
 
@@ -121,7 +126,7 @@ This feature is a nice to have but not really required.
 
 # Requirements - UI / Frontend
 
-1. Create a UI that will list all of the available Documents. The list should have the following feature:
+1. Create a UI that will list all of the available Documents. The list should have the following features:
 
    a. The list should be able to display at least these fields: Project, Register, DocumentNo, Subject.
    
@@ -131,7 +136,7 @@ This feature is a nice to have but not really required.
    
    BONUS: If possible, add something that can indicate Attachment(s) exists for a list item. Nice to have - but not really required.
  
-2. Create a UI for entering Document Information. The page should have the following feature:
+2. Create a UI for entering Document Information. The UI for this can be another page or a dialog (modal) which should have the following features:
 
    a. Able to select the Register for the Document.
    
